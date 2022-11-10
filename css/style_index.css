@@ -1,0 +1,19 @@
+div.profile-pic{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    border-radius: 100%;
+    width: 210px;
+    height: 210px;
+    background-color: black;
+    transition: background .5s;
+}
+div.profile-pic:hover{
+    background-color: rgb(141, 141, 141);
+}
+div.profile-pic img{
+    margin-top: 2.5%;
+    height: 95%;
+    border-radius: 100%;
+}
