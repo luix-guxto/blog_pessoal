@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <link rel="stylesheet" href="./css/style_index.css">
     <link rel="icon" sizes="32x32" href="https://avatars.githubusercontent.com/u/77067320?v=4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" async src="./js/js_index.js"></script>
@@ -75,3 +74,194 @@
         </div>
     </body>
 </html>
+<style type="text/css">
+    div.sobre{
+    
+    overflow: hidden;
+    background-color: #cccccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    width: 50%;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 5px;
+}
+div.imageText{
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 5px;
+    width: 25%;
+    display: inline-block;
+}
+div.imageText img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+div.text{
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+div.titulo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: -10px;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+h2{
+    margin-top: -5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+h3{
+    margin-bottom: 1px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+div.hub{
+    background-color: var(--cor-hub);
+    width: 99%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://media-exp1.licdn.com/dms/image/C4E16AQGT_lfzwSFZhA/profile-displaybackgroundimage-shrink_200_800/0/1618853821259?e=2147483647&v=beta&t=8EJtQQPC2wEuWOymmSQh321iLxyrw91wcm9RAImuiSw);
+}
+div.back:hover{
+    background-color: var(--cor-mouse-sobre);
+}
+div.back{
+    transition: background-color 0.5s;
+    background-color: var(--cor-hub);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.fundo{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto;
+}
+div.profile-pic{
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    border-radius: 100%;
+    width: 210px;
+    height: 210px;
+    background-color: rgb(24, 100, 222);
+    transition: background .5s;
+}
+div.profile-pic:hover{
+    background-color: rgb(141, 141, 141);
+}
+div.profile-pic:hover + div.back{
+    background-color: rgb(--cor-hub);
+}
+div.profile-pic img{
+    margin-top: 2.5%;
+    height: 95%;
+    border-radius: 100%;
+}
+
+:root{
+    
+    --cor-mouse-sobre: rgb(141, 141, 141);
+    --cor-hub: rgb(124, 166, 252);
+    --cor-fundo: rgb(54, 121, 255);
+    --cor-fundo-selecionado: red;
+    --cor-texto: rgb(0, 0, 0);
+    --cor-submenu: rgb(237, 237, 237);
+    --cor-submenu-selec: rgb(124, 124, 124);
+    --cor-selec: rgb(255,255,255);
+    --cor-texto-submenu: rgb(22, 22, 22);
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: var(--cor-fundo);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn{
+    color: var(--cor-texto);
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    transition: background 0.3s;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content{
+    background-color: white;
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: var(--cor-texto-submenu);
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*sobre a seleção*/
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: var(--cor-fundo-selecionado);
+    color: var(--cor-selec);
+}
+
+.dropdown-content a:hover{
+    background-color: var(--cor-submenu-selec);
+    color: var(--cor-texto-submenu);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    color: var(--cor-texto-submenu);
+}
+</style>
