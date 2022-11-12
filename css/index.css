@@ -1,11 +1,16 @@
+@media (max-width: 480px) {
+    .container {
+        width: 200%;
+    }
+}
+
 div.sobre{
-    
     overflow: hidden;
     background-color: #cccccc;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3px;
-    width: 50%;
+    width: 85%;
     border: 2px solid rgb(155, 155, 155);
     border-radius: 5px;
 }
@@ -21,6 +26,7 @@ div.imageText img{
     margin-bottom: auto;
 }
 div.text{
+    font-size: 20px;
     overflow: hidden;
     float: left;
     margin-left: 10px;
@@ -37,19 +43,19 @@ div.titulo{
 }
 h1{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: #000000;
 }
 h2{
     margin-top: -5px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #000000;
 }
 h3{
     margin-bottom: 1px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: #000000;
 }
@@ -67,7 +73,7 @@ div.back:hover{
 div.back{
     transition: background-color 0.5s;
     background-color: var(--cor-hub);
-    width: 50%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -125,7 +131,7 @@ body {
     background-color: var(--cor-fundo);
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 85%;
 }
 
 .navbar a{
@@ -138,7 +144,7 @@ body {
     transition: background 0.3s;
 }
 .dropdown{
-    float: left;
+    float: right;
     overflow: hidden;
 }
 
